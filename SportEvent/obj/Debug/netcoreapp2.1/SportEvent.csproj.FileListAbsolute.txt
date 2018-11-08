@@ -1,0 +1,14 @@
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\bin\Debug\netcoreapp2.1\SportEvent.deps.json
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\bin\Debug\netcoreapp2.1\SportEvent.runtimeconfig.json
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\bin\Debug\netcoreapp2.1\SportEvent.runtimeconfig.dev.json
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\bin\Debug\netcoreapp2.1\SportEvent.dll
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\bin\Debug\netcoreapp2.1\SportEvent.pdb
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\obj\Debug\netcoreapp2.1\SportEvent.csproj.CoreCompileInputs.cache
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\obj\Debug\netcoreapp2.1\SportEvent.RazorAssemblyInfo.cache
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\obj\Debug\netcoreapp2.1\SportEvent.RazorAssemblyInfo.cs
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\obj\Debug\netcoreapp2.1\SportEvent.AssemblyInfoInputs.cache
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\obj\Debug\netcoreapp2.1\SportEvent.AssemblyInfo.cs
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\obj\Debug\netcoreapp2.1\SportEvent.RazorTargetAssemblyInfo.cache
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\obj\Debug\netcoreapp2.1\SportEvent.dll
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\obj\Debug\netcoreapp2.1\SportEvent.pdb
+C:\Users\MpenduloM\source\repos\SportEvent\SportEvent\obj\Debug\netcoreapp2.1\SportEvent.csprojAssemblyReference.cache
