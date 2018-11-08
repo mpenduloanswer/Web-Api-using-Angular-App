@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color:#ede7f6;
+}
+select#radiobutton {
+    max-width: 100px;
+    min-width: 100px;
+    width: 50px !important;
+}
+.country-view .input-group-text {
+    background-color: #424242;
+    color:#fff;
+    border-color: #212121;
+    border-right-width:0;
+}
+
+.country-view select {
+    background-color: #696969;
+    color:#fff;
+    border-color: #212121;
+    border-left-width:0;
+}

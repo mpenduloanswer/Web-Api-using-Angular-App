@@ -1,0 +1,44 @@
+
+<div class="container bg-light-grey country-view">
+    <div class="row">
+      <div class="col">
+      </div>
+<div>
+
+  Select Sport:  <select   type="number" [(ngModel)]="sportId" (ngModelChange)="GetSportId()">
+        <option *ngFor="let sport of sport" [ngValue]="sport.sportID">{{sport.sportName}}</option>
+      </select>
+
+   Select Country : <select  type="number" [(ngModel)] ="countryID" name="countryID"(ngModelChange)="GetcountryId()" >
+          <option *ngFor="let value of countryTemp" [value]="value.countryID">{{value.countryName}}
+          </option>
+          </select>
+          
+
+     Select Tournment: <select [(ngModel)] ="tournamentid" name="tournamentid"(ngModelChange)="GetTournamentId()" >
+              <option *ngFor="let value of tournamentTemp" [value]="value.tournamentID">{{value.tournamentName}}  
+              </option>
+              </select>
+
+              <input type="text" placeholder="Enter Event Name " #newEvent>
+              <input  type="date" #newDate>
+              <button class="btn btn-success" (click)="postEvents(newEvent.value, sportId, countryID, tournamentid, newDate.value); newDate.value=''; newEvent.value=''">Add Event</button>
+         
+</div>
+    </div>
+<h2 class="text-center">List of Events</h2>
+
+<table class="table table-hover" *ngIf="events">
+<tr *ngFor="let eve of events">
+  <td>EventName: {{eve.eventName}} | SportName: {{eve.sportName}}| CountryName: {{eve.countryName}}| eventDate {{eve.eventDate}} </td>
+  <div class="input-group">
+      <input type="text" class="text" placeholder="Enter Tournament Name" #eventName>
+      <input  type="date" #eventDate>
+      <div class="input-group-append">
+      <button (click)="editEvent(eve.eventID,eventName.value,eventDate.value)"class="btn btn-dark">Edit</button>
+        <button (click)="removeEvent(eve)" type="button" class="btn btn-danger">Delete</button>         
+      </div>
+    </div>  
+</tr>
+</table>
+ 

@@ -1,0 +1,32 @@
+<div class="container bg-light-grey country-view">
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Select Sport :</label>
+      </div>
+      <select name="radiobutton" class="custom-select" id="radiobutton" [(ngModel)]="sportId" name="sportId" (change)="GetSportId(sportId)">
+        <option *ngFor="let spt of sport" [value]="spt.sportID">{{spt.sportName}}</option>
+
+      </select>
+    </div>
+
+    <div *ngIf="isSelected">
+      <input type="text" [(ngModel)]="CountryName" placeholder="Enter Country Name" name="CountryName">
+      <button (click)="AddCountry(CountryName,sportId) " class="btn btn-success">Add Country</button>
+    </div>
+
+    <h2 class="text-center">List of Countries</h2>
+    <table class="table table-hover" *ngIf="country">
+      <tr *ngFor="let sport of country ">
+        <td>Sport: {{sport.sportName}} | Country: {{sport.countryName}} </td>
+        <div class="input-group">
+          <input type="text" class="text" placeholder="Enter Country Name" #newCountry>
+          <div class="input-group-append">
+            <button (click)="editCountry(sport,newCountry.value)" class="btn btn-dark">Edit</button>
+            <button (click)="removeCountry(sport)" type="button" class="btn btn-danger">Delete</button>
+          </div>
+        </div>
+      </tr>
+    </table>

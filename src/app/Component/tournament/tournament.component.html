@@ -1,0 +1,49 @@
+<div class="container bg-light-grey country-view">
+    <div class="row">
+      <div class="col">
+ 
+      </div>
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Select Sport :</label>
+  </div>
+  <select name="radiobutton" class="custom-select" id="radiobutton" [(ngModel)] ="sportId" name="sportId" (change)="GetSportId(sportId)">
+    <option  *ngFor="let spt of sport" [value]="spt.sportID">{{spt.sportName}}</option>
+    
+  </select>
+</div>  
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Select Country :</label>
+  </div>
+  <select name="radiobutton" class="custom-select" id="radiobutton" [(ngModel)] ="countryId" name="countryId"(change)="GetcountryId(countryId)">
+    <option  *ngFor="let value of countryTemp" [value]="value.countryID">{{value.countryName}}</option>
+  </select>
+</div>  
+          <div class="col-sm-12 col-lg-4">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" type="text" [(ngModel)]="TournamentName"placeholder="Enter Tournament Name" name="TournamentName"#addTour>
+            <div class="input-group-append">
+              <button (click)="AddTournament(TournamentName,sportId,countryId) " class="btn btn-success">Add Tournament</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<table class="table table-hover" *ngIf="tournament">
+<tr *ngFor="let tour of tournament">
+  <td>TournamentName:{{tour.tournamentName}} | CountryName:{{tour.countryName}} | Sportname:{{tour.sportName}}</td>
+      <div class="input-group">
+    <input type="text" class="text" placeholder="Enter Tournament Name" #newTournament>
+    <div class="input-group-append">
+    <button (click)="editTournament(tour.tournamentID,newTournament.value)"class="btn btn-dark">Edit</button>
+      <button (click)="removeTournament(tour)" type="button" class="btn btn-danger">Delete</button>         
+    </div>
+  </div>   
+ 
+</tr>
+</table>
+
+ 
+ 
